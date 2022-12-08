@@ -1,11 +1,11 @@
 import React from "react";
 
-const Button = ({label}) => {
-  return (
-    <button onClick={() => alert(`"A label desse botão é ${label}"`)}>
-      {label}
-    </button>
-  )
-}
+import styles from './button.module.css'
 
-export default Button;
+export const Button = ({label}) => {
+  return <button className={styles.btn} 
+            onClick={() => alert(`"A label desse botão é ${label}"`)}>
+            {label}
+         </button>
+  
+}
